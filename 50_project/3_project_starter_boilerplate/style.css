@@ -13,7 +13,7 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-
+    background: radial-gradient(circle at bottom left, #5D00FF, #F800B9, #FF0074, #FF7242, #FFBE38, #F9F871);
 }
 
 .container {

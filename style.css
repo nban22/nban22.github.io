@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at bottom left, #5D00FF, #F800B9, #FF0074, #FF7242, #FFBE38, #F9F871);
+}
+
+nav {
+    height: 80px;
+    background: radial-gradient(circle at right, #5D00FF, #F800B9, #FF0074, #FF7242, #FFBE38, #F9F871);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    padding-right: 2rem;
+}
+
+
+.logo {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1.5rem;
+    background-color: #FFBE38;
+    border-radius: 50px;
+}
+
+.hero {
+    
+    height: 100vh;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 3rem calc((100vh - 1300px)/2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    color: #5D00FF;
+    background-color: #FFBE38;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #FF7242;
+    color: white;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
